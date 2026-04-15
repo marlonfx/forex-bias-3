@@ -9,7 +9,7 @@ export default async function handler(req, res) {
       });
     }
 
-    const url = `https://financialmodelingprep.com/stable/economic-calendar?from=2024-01-01&to=2024-01-10&apikey=${apiKey}`;
+    const url = `https://financialmodelingprep.com/api/v3/quote/AAPL?apikey=${apiKey}`;
 
     const response = await fetch(url);
     const data = await response.json();
